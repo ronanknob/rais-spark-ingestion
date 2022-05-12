@@ -1,12 +1,12 @@
-name: Deploy
+name: Test on PR
 
 on:
-  push:
+  pull:
     branches: [master]
 
 jobs:
-  deploy:
-    name: Deploy to Datalake
+  test:
+    name: Test infra on PR
     runs-on: ubuntu-latest
     
     steps:
