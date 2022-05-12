@@ -1,7 +1,7 @@
 name: Test on PR
 
 on:
-  pull_request:
+  pull:
     branches: [master]
 
 jobs:
@@ -27,7 +27,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
 
-    - name: IaC Apply
+    - name: IaC Test
       env:
         COMMAND_IAC: terraform
       run:
