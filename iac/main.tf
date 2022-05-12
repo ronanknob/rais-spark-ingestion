@@ -26,7 +26,3 @@ resource "aws_s3_bucket_object" "codigo_spark" {
     source = "../job_spark.py"
     etag = filemd5("../job_spark.py")
 }
-
-provider "aws" {
-  region = "us-east-1"
-}
