@@ -2,3 +2,4 @@ rais2020/*
 .terraform*
 .DS_Store
 terraform*
+.vscode/*
