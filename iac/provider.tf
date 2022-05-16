@@ -5,8 +5,8 @@ provider "aws" {
 # Centralizar aquivo de controle de estado do terraform
 terraform {
     backend "s3" {
-        bucket = "terraform-state-igti-ronan"
-        key = "state/igti/edc/mod1/terraform.state"
+        bucket = "desafio-mod-1"
+        key = "terraform-state/terraform.state"
         region = "us-east-1"
     }
 }
